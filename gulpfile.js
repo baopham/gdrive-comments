@@ -16,6 +16,10 @@ elixir(function(mix) {
     mix.sass('app.scss')
 });
 
+elixir(function(mix) {
+    mix.scripts(['laravel.js', 'app.js'], 'public/js/main.js');
+});
+
 gulp.task('copyFonts', function () {
     gulp.src('node_modules/bootstrap-sass/assets/fonts/*/*.*')
         .pipe(gulp.dest('public/fonts'));

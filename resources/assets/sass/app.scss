@@ -1,2 +1,14 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+.m-r-sm {
+  margin-right: 5px;
+}
+
+.ellipsis {
+  display: inline-block;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}

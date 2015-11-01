@@ -8,7 +8,7 @@
     <ul class="list-group">
         <li class="list-group-item list-group-item-info">
             <article>
-                <span class="label label-default">
+                <span class="label label-default context ellipsis" title="{{ $comment->context }}">
                     {{ $comment->context }}
                 </span>
                 &nbsp;

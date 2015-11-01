@@ -18,10 +18,10 @@
         </label>
     </div>
 
-    <div class="form-group">
+    <div class="form-group file-nickname hide">
         <label for="fileName">File Nickname</label>
         <input type="text" class="form-control" name="fileName" placeholder="Easy name to remember">
-        <p class="help-block">Put in a nickname for this file if you want to save it for later used</p>
+        <p class="help-block">Put in a nickname for this file if you want to save it for later use</p>
     </div>
 
     <button type="submit" class="btn btn-default">Get comments</button>
@@ -39,7 +39,14 @@
             <a href="/gdrive/files/{{ $file->id }}">
                 {{ $file->name }}
             </a>
-            <a href="/gdrive/files/{{ $file->id }}/edit" class="pull-right">
+
+            <a href="/gdrive/files/{{ $file->id }}"
+               data-method="delete" data-token="{{ csrf_token() }}"
+               data-confirm="Are you sure?" class="text-danger pull-right">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+
+            <a href="/gdrive/files/{{ $file->id }}/edit" class="pull-right m-r-sm">
                 <span class="glyphicon glyphicon-edit"></span>
             </a>
         </li>

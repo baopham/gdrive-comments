@@ -13,4 +13,11 @@
 
     <button type="submit" class="btn btn-default">Save</button>
 </form>
+
+<a href="/gdrive/files/{{ $file->id }}"
+   data-method="delete" data-token="{{ csrf_token() }}"
+   data-confirm="Are you sure?" class="btn btn-danger pull-right">
+    Delete
+</a>
+
 @endsection

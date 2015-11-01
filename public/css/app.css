@@ -5753,4 +5753,15 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.m-r-sm {
+  margin-right: 5px; }
+
+.ellipsis {
+  display: inline-block;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle; }
+
 /*# sourceMappingURL=app.css.map */
