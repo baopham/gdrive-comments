@@ -26,9 +26,9 @@ class GDriveFileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(GDriveFile $gdriveFile)
+    public function index()
     {
-        $files = $gdriveFile->all();
+        $files = Auth::user()->files;
 
         return view('gdrive.index', compact('files'));
     }

@@ -46,7 +46,7 @@
                 <span class="glyphicon glyphicon-remove"></span>
             </a>
 
-            <a href="/gdrive/files/{{ $file->id }}/edit" class="pull-right m-r-sm">
+            <a href="/gdrive/files/{{ $file->id }}/edit" class="pull-right m-r-sm" id="{{ $file->id }}-edit">
                 <span class="glyphicon glyphicon-edit"></span>
             </a>
         </li>

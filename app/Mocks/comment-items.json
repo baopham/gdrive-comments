@@ -1,0 +1,49 @@
+[
+  {
+    "anchor": "kix.6ygey3spy11k",
+    "commentId": "AAAAATCjJ2g",
+    "content": "test",
+    "createdDate": "2015-11-01T11:13:24.957Z",
+    "deleted": false,
+    "fileId": "foobar",
+    "fileTitle": "Lumen course",
+    "htmlContent": "test",
+    "kind": "drive#comment",
+    "modifiedDate": "2015-11-01T11:13:27.964Z",
+    "selfLink": null,
+    "status": "open",
+    "modelData": {
+      "author": {
+        "kind": "drive#user",
+        "displayName": "Bao Pham",
+        "picture": {
+          "url": ""
+        },
+        "isAuthenticatedUser": true
+      },
+      "context": {
+        "type": "text\/html",
+        "value": "Laravel"
+      },
+      "replies": [
+        {
+          "kind": "drive#commentReply",
+          "replyId": "AAAAATCjJ2k",
+          "createdDate": "2015-11-01T11:13:27.964Z",
+          "modifiedDate": "2015-11-01T11:13:27.964Z",
+          "author": {
+            "kind": "drive#user",
+            "displayName": "Bao Pham",
+            "picture": {
+              "url": ""
+            },
+            "isAuthenticatedUser": true
+          },
+          "htmlContent": "test reply",
+          "content": "test reply",
+          "deleted": false
+        }
+      ]
+    }
+  }
+]
